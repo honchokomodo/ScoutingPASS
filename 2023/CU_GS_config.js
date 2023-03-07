@@ -18,7 +18,7 @@ var config_data = `
       "gsCol": "event",
       "type": "event",
       "defaultValue": "2022sfr",
-      "required": "true",
+      "required": "true"
     },
     { "name": "Match Level",
       "code": "l",
