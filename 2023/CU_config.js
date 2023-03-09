@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022sfr",
+      "defaultValue": "2023sfr",
       "required": "true"
     },
     { "name": "Match Level",
