@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022carv",
+      "defaultValue": "2023casf",
       "required": "true",
       "disabled": "true"
     },
@@ -23,7 +23,7 @@ var config_data = `
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
-        "de": "Double Elimination<br>",
+        "sf": "Semifinals<br>",
         "f": "Finals"
       },
       "defaultValue": "qm",
@@ -75,13 +75,9 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Crossed Cable",
-      "code": "acc",
-      "type": "bool"
-    },
-    { "name": "Crossed Charging Station",
-      "code": "acs",
-      "type": "bool"
+    { "name": "Game Pieces attempted<br>(Scored and Missed)",
+      "code": "aa",
+      "type": "counter"
     },
     { "name": "Mobility?",
       "code": "am",
@@ -100,10 +96,6 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
-      "code": "tct",
-      "type": "cycle"
-    },
     { "name": "Grid Scoring",
       "code": "tsg",
       "type": "clickable_image",
@@ -113,13 +105,11 @@ var config_data = `
       "toggleClick": "true",
       "showFlip": "false",
       "showUndo": "false",
-      "shape": "circle 12 black red true",
-      "cycleTimer": "tct"
+      "shape": "circle 12 black red true"
     },
     { "name": "Feeder Count<br>(Fed another bot)",
       "code": "tfc",
-      "type": "counter",
-      "cycleTimer": "tct"
+      "type": "counter"
     },
     { "name": "Was Fed<br>Game Pieces",
       "code": "wf",
@@ -147,6 +137,17 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
+    },
+    { "name": "Substation Use",
+      "code": "sub",
+      "type": "radio",
+      "choices": {
+        "o": "Single<br>",
+        "u": "Double<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
     }
   ],
   "endgame": [
@@ -169,6 +170,10 @@ var config_data = `
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
       "type": "counter"
+    },
+    { "name": "Links Scored",
+      "code": "ls",
+      "type": "counter"
     }
   ],
   "postmatch": [
@@ -183,10 +188,6 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Links Scored",
-      "code": "ls",
-      "type": "counter"
-    },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -198,10 +199,6 @@ var config_data = `
         "x": "Did not play defense"
       },
       "defaultValue": "x"
-    },
-    { "name": "Swerve drive?",
-      "code": "sd",
-      "type": "bool"
     },
     { "name": "Speed Rating",
       "code": "sr",

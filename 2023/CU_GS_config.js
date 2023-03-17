@@ -17,9 +17,8 @@ var config_data = `
       "code": "e",
       "gsCol": "event",
       "type": "event",
-      "defaultValue": "2022carv",
-      "required": "true",
-      "disabled": "true"
+      "defaultValue": "2022sfr",
+      "required": "true"
     },
     { "name": "Match Level",
       "code": "l",
@@ -91,7 +90,7 @@ var config_data = `
     },
     { "name": "Crossed Charging Station",
       "code": "acs",
-      "gsCol": "autoCrossedCharginStation",
+      "gsCol": "autoCrossedChargingStation",
       "type": "bool"
     },
     { "name": "Mobility?",
