@@ -170,7 +170,7 @@ var config_data = `
       "code": "dn",
       "type": "counter"
     },
-    { "name": "Links Scored<br>(by alliance)",
+    { "name": "Links Scored",
       "code": "ls",
       "type": "counter"
     }
