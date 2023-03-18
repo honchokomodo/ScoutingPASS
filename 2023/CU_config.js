@@ -14,8 +14,9 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022sfr",
-      "required": "true"
+      "defaultValue": "casf",
+      "required": "true",
+      "disabled": "true"
     },
     { "name": "Match Level",
       "code": "l",
